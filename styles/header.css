@@ -1,5 +1,11 @@
 .header{
     border: 3px solid black;
+    display:flex;
+    justify-content: center;
+}
+.header__menu
+{
+    display: flex;
 }
 .menu {
     margin: 0;
@@ -17,5 +23,11 @@
    }
    .menu__link--blue{
     background-color: rgb(71, 151, 226);
+   }
+
+   .header__logo-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
    }
    

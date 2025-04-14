@@ -1,0 +1,85 @@
+.about{
+    display: flex;
+    gap: 10px;
+   }
+   .about__wrap-right{
+    width: 500px;
+    flex-shrink: 0;
+   }
+   .specialists__card{
+    width: 350px;
+    padding: 15px;
+    background-color: aliceblue;
+   color: black;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+   }
+   .help__name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+   }
+   .help__job{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-style: italic;
+   }
+   .help__desc{
+    margin-top: 0;
+    margin-bottom: 15px;
+   }
+   .help {
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 900px;
+   }
+   .help__item{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+   }
+   .help__link{
+    margin-top: auto;
+   }
+   .help__link{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+   }
+  .tuition{
+    background-color: #f5f3f3;
+  }
+.main__title{
+    text-align: center;
+}
+.tuition__title2{
+    text-align: center;
+}
+.review{
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+}
+.reviewimage{
+    margin: 0 auto;
+    width: 50px;
+}
+.answers__title{
+    margin: 0 auto;
+    width: 500px;
+}
+.answers__text{
+    margin: 0 auto;
+    width: 500px;
+}

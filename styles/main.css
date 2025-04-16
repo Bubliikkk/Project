@@ -83,3 +83,59 @@
     margin: 0 auto;
     width: 500px;
 }
+.answers {
+    border-top: 1px solid rgb(238, 230, 230); /*1пиксель - толщина границы, black - цвет*/
+    padding-top: 30px; /*внутренний отступ*/
+    margin-top: 60px;/*внешний отступ*/
+    }
+.reviews {
+    border-top: 1px solid rgb(255, 248, 248); /*1пиксель - толщина границы, black - цвет*/
+    padding-top: 30px; /*внутренний отступ*/
+    margin-top: 60px;/*внешний отступ*/   
+}
+.tuition {
+    border-top: 1px solid rgb(245, 245, 245); /*1пиксель - толщина границы, black - цвет*/
+    padding-top: 30px; /*внутренний отступ*/
+    margin-top: 60px;/*внешний отступ*/  
+}
+.main__title {
+    border-top: 1px solid rgba(233, 227, 215, 0.966); /*1пиксель - толщина границы, black - цвет*/
+    padding-top: 30px; /*внутренний отступ*/
+    margin-top: 60px;/*внешний отступ*/  
+}
+.answers__title {
+    margin-top: 20px; /*внешний отступ сверху 20 пикселей*/
+  }
+  .sign__form{
+    display: flex; /* гибкое отображение */
+    flex-direction: column; /* поставим все элементы вертикально*/
+    gap: 5px; /*добавим отступы между элементами */
+    width: 300px; /*укажем ширину всей формы*/
+    background-color: aliceblue; padding: 30px;
+    border-radius: 14px;
+    width: 450px;
+  }
+
+  .sign__input{
+    padding: 11px; /*внутренний отступ*/
+    border-radius: 5px; /*края будут закруглены с радиусом в 8 пикселей */
+    border-color: #f5f3f3;
+    border-style: solid;
+    }
+    .sign__form button{
+        border: none; /*уберем границу или рамку*/
+        border-radius: 5px;  /*края будут закруглены с радиусом в 8 пикселей */
+        padding: 12px; /*внутренний отступ*/
+        background-color: #238aff; /*цвет фона*/
+        color: white; /*цвет текста*/
+        }
+        .sign {
+            padding: 40px; margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            width: 950px;
+            background-image: url("../images/form_background.jpg");
+        }
+        .sign__left {
+            color: aliceblue;
+        }

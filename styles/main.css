@@ -161,3 +161,32 @@
         .sign__left {
             color: aliceblue;
         }
+        .menu__button {
+            /*тут ваш код кнопки*/
+            transition: background-color 0.3s,
+            color 0.3s;
+           }
+           .menu__button:hover {
+            background-color: #6fa4d6;
+            color: #ffffff;
+           }
+           .menu__button:active {
+            background-color: #58c2dd;
+            color: #ffffff;
+           }
+           .card {
+            /*тут ваш код кнопки*/
+            transition: transform 0.3s;
+           }
+           .menu__button:hover {
+            transform: scale(1.03);
+           }
+           .menu__button {
+            /*тут ваш код карточки */
+            transition: box-shadow 0.3s;
+           }
+           .menu__button:hover {
+            box-shadow: 0 8px 16px 0
+           rgba(0,0,0,0.2);
+           }
+           

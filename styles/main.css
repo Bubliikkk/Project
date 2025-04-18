@@ -6,6 +6,12 @@
     width: 500px;
     flex-shrink: 0;
    }
+   .about__wrap-right {
+    width: 360px;
+    }
+   .about {
+    padding: 40px;
+   }
    .specialists__card{
     width: 350px;
     padding: 15px;
@@ -88,6 +94,11 @@
     padding-top: 30px; /*внутренний отступ*/
     margin-top: 60px;/*внешний отступ*/
     }
+    .answer {
+        border-top: 1px solid black; /*1пиксель - толщина границы, black - цвет*/
+        padding-top: 30px; /*внутренний отступ*/
+        margin-top: 60px;/*внешний отступ*/
+        }
 .reviews {
     border-top: 1px solid rgb(255, 248, 248); /*1пиксель - толщина границы, black - цвет*/
     padding-top: 30px; /*внутренний отступ*/
@@ -104,6 +115,9 @@
     margin-top: 60px;/*внешний отступ*/  
 }
 .answers__title {
+    margin-top: 20px; /*внешний отступ сверху 20 пикселей*/
+  }
+  .answers__title {
     margin-top: 20px; /*внешний отступ сверху 20 пикселей*/
   }
   .sign__form{
@@ -136,6 +150,14 @@
             width: 950px;
             background-image: url("../images/form_background.jpg");
         }
+        .sign {
+            border-top: 1px solid black; /*1пиксель - толщина границы, black - цвет*/
+            padding-top: 30px; /*внутренний отступ*/
+            margin-top: 60px;/*внешний отступ*/
+            }
+            .sign{
+                background-size: cover;
+                }
         .sign__left {
             color: aliceblue;
         }

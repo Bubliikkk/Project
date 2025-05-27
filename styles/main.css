@@ -189,4 +189,22 @@
             box-shadow: 0 8px 16px 0
            rgba(0,0,0,0.2);
            }
+           .intensive {
+            margin-top: 40px; /*отступ сверху*/
+            display: flex; /*задаем свойство flex, с помощью которого делаем контейнер гибким и располагаем элементы в ряд*/
+            justify-content: space-between; /*распределяем элементы по ширине*/ 
+        }
+        .intensive__item {
+            width: 300px;/*устанавливаем ширину для каждого элемента*/
+            position: relative;/*задаем его позицию относительной, чтобы дочерние элементы могли позиционироваться относительно него*/
+            margin: 0 auto;
+    width: 500px;
+        }
+        .intensive__description {
+            margin-top: 15px; /*отступ сверху*/
+            color: #4a4a4a; /*цвет текста*/
+            text-align: center; /*выравнивание текста по центру*/
+            font-size: 16px; /*размер шрифта*/
+        }
+                        
            

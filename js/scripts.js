@@ -88,4 +88,46 @@ if (preloader && content) {
     }, 1000); // Задержка 3 секунды
 }
 
+//задание 3.5 
+const headerMenu = document.querySelector('.menu');
+if (headerMenu){
+        const menuData = {
+            link1: {
+                link: '#',
+                title: 'Главная',
+            },
+            link2: {
+                link: '#',
+                title: 'Процесс обучения',
+            },
+            link3: {
+                link: '#',
+                title: 'Цены',
+            },
+            link3: {
+                link: '#',
+                title: 'Отзывы',
+            },
+            link3: {
+                link: '#',
+                title: 'Конакты',
+            }
+        }
+        const createLink = (UrlLink, title) =>{
+            const link = `
+                <li class="menu__item">
+                    <a class="menu__link" href="#">${title}</a>
+                </li>
+            `;
+            return link;
+        }
+        for (const linkItem in menuData) {
+            const link = menuData[linkItem];
+            const linkIndex = createLink(link.UrlLink, link.title);
+            headerMenu.insertAdjacentHTML('beforeend', linkIndex);
+        }
+        console.log('Навигацинное меню создано с помощью javascript!');
+}
+
+
 

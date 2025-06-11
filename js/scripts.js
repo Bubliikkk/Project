@@ -127,7 +127,58 @@ if (headerMenu){
             headerMenu.insertAdjacentHTML('beforeend', linkIndex);
         }
         console.log('Навигацинное меню создано с помощью javascript!');
+    }
+// объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.swiper');
+//проверяем существует ли элемент
+    if (sliders) {
+        const swiper1 = new Swiper(sliders, {
+            // Пагинация
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+            },
+            // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        }); 
+    }
+    const dialogApplication = document.querySelector(".sign");
+    const formApplication = document.querySelector("#formApplication"); 
+// Проверяем, существует ли элемент formApplication
+if (formApplication) {  
+    // Добавляем обработчик события для отправки формы
+   formApplication.addEventListener("submit", (event) => {
+     event.preventDefault(); // Предотвращаем отправку формы
+    // Объявляем переменные "username", "tel","email",   и помещаем в нее элементы с id из формы
+     const username = formApplication.querySelector("#username").value;
+     const tel = formApplication.querySelector("#tel").value;
+
+     // Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
+const modalMessage = dialogApplication.querySelector("#application-message");
+    
+      // Проверка длины имени пользователя
+      if (username.length < 3) {
+         modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+         modalMessage.style.color = "black"; // Устанавливаем цвет сообщения об ошибке
+         return;
+      }
+    
+       // Проверка номера телефона
+      if (!/^\d{10,}$/.test(tel)) {
+          modalMessage.textContent = "Номер телефона должен содержать только цифры и быть не менее 10 символов";
+          modalMessage.style.color = "black"; // Устанавливаем цвет сообщения
+          return;
+      }
+    
+      // Здесь можно добавить отправку данных на сервер
+      modalMessage.textContent = "Заявка отправлена!";
+      modalMessage.style.color = "green"; // Устанавливаем цвет сообщения для успешной отправки
+    
+      // Записываем данные в localStorage
+      window.localStorage.setItem("username", username);
+      window.localStorage.setItem("tel", tel);
+});
 }
-
-
-

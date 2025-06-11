@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -50,6 +51,17 @@
                 <img class="hello__images" src="images/me.jpeg">
             </div>
         </section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/cm7.jpg" alt="slide 1" class="swiper-slide-image" width="600"></div>
+              <div class="swiper-slide"><img src="images/puteshestvie-v-angliyu.jpg" alt="slide 2" class="swiper-slide-image" width="600"></div>
+              <div class="swiper-slide"><img src="images/orig.webp" alt="slide 3" class="swiper-slide-image" width="600"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
         <section class="tuition">
             <h2 class="main__title">Как проходит обучение</h2>
             <h3 class="tuition__title2">Мы все разные и у каждого свои особенности, но нас объединяют общие ценности и
@@ -147,14 +159,17 @@
                     план обучения для достижения цели</p>
 
             </div>
-            <form class="sign__form" action="#" method="POST">
+            <form class="sign__form" action="#" method="POST" id="formApplication">
                 <h3 class="sign__title form">Успешно обучил уже более 300 учеников за последние 5 лет</h3>
-                <input class="sign__input" type="text" placeholder="Ваше имя"><br>
-                <input class="sign__input" type="text" placeholder="Номер телефона"><br>
-                <button>Записаться бесплатно</button>
+                <input class="sign__input" type="text" placeholder="Ваше имя" id="username"><br>
+                <input class="sign__input" type="text" placeholder="Номер телефона" id="tel"><br>
+                <button type="submit">Записаться бесплатно</button>
+                <p id="application-message" class="application__message"></p>
             </form>
         </section>
     </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- Scrollup -->
     <button id="scrollToTop" class="scroll-top">
